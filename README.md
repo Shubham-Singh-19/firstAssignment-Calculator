@@ -28,4 +28,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # firstAssignment-Calculator-
 Basic understanding of Angular
->>>>>>> ef95fadca9eb01703635ad21559dad28b7d78cba
