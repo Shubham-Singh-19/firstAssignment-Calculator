@@ -1,0 +1,120 @@
+/* To remove selection of text from the page using mouse or keyboard */
+*.unselectable {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ }
+
+ /* the div that contains calculator */
+.base {
+    background: darkslategray;
+    margin-top: 5rem;
+    width: 100%;
+    box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+}
+
+/* title of page */
+h1{
+    font-size: 3em;
+    font-family: cursive;
+    font-weight: bolder;
+    font-stretch: expanded;
+    color: lightskyblue;
+    text-align: center;
+    margin-top: 2%;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+/* main display of calculator that is lower and bigger part */
+.maindisplay {
+    background:black;
+    height: 25vh;
+    padding: 5% !important;
+    font-size: 3.5rem;
+    text-align: right;
+    font-family: Courier, monospace;
+    overflow: none;
+    color: white;
+    object-fit: contain;
+}
+
+/* upper and smaller part of keyboard */
+.subdisplay {
+    border-bottom: 1px solid white;
+    height: 30%;
+    font-size: 1.5rem;
+    overflow: none;
+    object-fit: contain;
+
+}
+
+/* class to handle when content of main display is overflowing */
+.fitfields{
+    background:black;
+    height: 25vh;
+    padding: 5% !important;
+    font-size: 2rem;
+    text-align: right;
+    font-family: Courier, monospace;
+    overflow: none;
+    color: white;
+}
+
+/* contains the all the buttons */
+.keypad {
+    height: calc(100% / 10);
+}
+
+/* per button */
+.keys {
+    padding:1em;
+    margin: auto;
+    background: rgb(0, 12, 7);
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: 0 20px 50px rgba(8, 112, 184, 0.7);
+}
+
+/* Del. button */
+.delkey{
+    color:  orangered;
+    font-size: medium; 
+}
+
+ /* AC button that clears all fields */
+.ackey {
+    color: orangered;
+    font-size: medium;
+}
+
+/* = button */
+.equalkey {
+    color: white;
+    background-color: orangered;
+}
+
+/* 0-9 buttons */
+.numkey {
+    color: dodgerblue;
+}
+/* all + - x / % buttons */
+.opkey {
+    color:lightseagreen;
+}
+
+/* when mouse is placed on any button */
+.keys:hover {
+    box-shadow:inset 0 0 5px;
+    opacity: 1;
+}
+
+/* to display components side by side and with proper margin */
+.one-line {
+    display: inline-block;
+}
